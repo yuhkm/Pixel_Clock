@@ -27,21 +27,6 @@ A personal project with self-designed PCB, enclosure CAD, and firmware.
 
 ---
 
-## Bill of Materials (BOM)
-
-| Component | Model / Spec |
-|-----------|-------------|
-| MCU | ESPRESSIF ESP32-S3 WROOM-1U N16R8 |
-| NeoPixel Matrix | WS2812B 8×8 module × 2 |
-| RTC | PCF85063ATT |
-| RTC Backup Battery | CR1220 |
-| Buzzer | BMB-2703N |
-| Illuminance Sensor | TEMT6000 |
-| Regulator | AP63203WU |
-| Power Connector | USB Type-C |
-
----
-
 ## Repository Structure
 
 ```
@@ -73,6 +58,21 @@ PixelClock/
     ├── Gerber/                Gerber files
     └── SMT/                   SMT files
 ```
+
+---
+
+## Bill of Materials (BOM)
+
+| Component | Model / Spec |
+|-----------|-------------|
+| MCU | ESPRESSIF ESP32-S3 WROOM-1U N16R8 |
+| NeoPixel Matrix | WS2812B 8×8 module × 2 |
+| RTC | PCF85063ATT |
+| RTC Backup Battery | CR1220 |
+| Buzzer | BMB-2703N |
+| Illuminance Sensor | TEMT6000 |
+| Regulator | AP63203WU |
+| Power Connector | USB Type-C |
 
 ---
 
@@ -114,7 +114,7 @@ Runs on FreeRTOS dual-core. Core0 handles networking, Core1 handles display and 
 
 ```bash
 # Clone the repository
-git clone https://github.com/<!-- username -->/PixelClock.git
+git clone https://github.com/yuhkm/Pixel_Clock.git
 cd PixelClock/FW
 
 # Build and upload
